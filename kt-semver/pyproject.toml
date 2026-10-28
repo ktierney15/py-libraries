@@ -1,0 +1,22 @@
+[project]
+name = "kt-semver"
+version = "0.1.0"
+description = "Semantic version bumping for CI pipelines"
+readme = "README.md"
+authors = [
+    { name = "ktierney15", email = "kevintierney99@gmail.com" }
+]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+kt-semver = "kt_semver.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.2",
+]
